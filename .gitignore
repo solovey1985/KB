@@ -1,0 +1,54 @@
+# .NET Core
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+bin/
+obj/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Angular
+/node_modules
+/dist
+/lib
+*.log
+.env
+
+# IDE - Visual Studio Code
+.vscode/
+!.vscode/settings.json
+*.suo
+*.ntvs*
+*.njsproj
+*.slnx
+
+# macOS
+.DS_Store
+
+.vs/
+
+# Uncomment if you have tasks that create the project's static files in wwwroot
+#wwwroot/
+
+# MSTest test Results
+[TestResults]/
+
+# NUnit
+*.nunit
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
