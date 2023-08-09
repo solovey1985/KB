@@ -7,8 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Helper\KB.Helper\KB.Helper.csproj" />
-  </ItemGroup>
-    
 </Project>
