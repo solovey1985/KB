@@ -38,5 +38,16 @@ namespace KB.Helper
             method?.Invoke();
 
         }
+
+        public void AddItemsForDisplay(int number, string title, Action method)
+        {
+            AddItemsToDisplay(number, title);
+            AddItemsToInvoke(number, method);
+        }
+
+        public string DisplayDemoTitle(int demo)
+        {
+            return _itemsToDisplay.GetValueOrDefault(demo);
+        }
     }
 }

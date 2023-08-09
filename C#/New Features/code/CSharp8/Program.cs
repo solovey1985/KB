@@ -2,6 +2,10 @@
 using System.Reflection.PortableExecutable;
 using System.Xml.Linq;
 
+using CSharp8.Demos;
+using CSharp8.Interfaces;
+using CSharp8.Models;
+
 using KB.Helper;
 namespace CSharp8
 {
@@ -10,38 +14,85 @@ namespace CSharp8
         static void Main(string[] args)
         {
             DisplayHelper display = new DisplayHelper();
-            display.AddItemsToDisplay(1, "Default Interface Members");
-            display.AddItemsToDisplay(2, "Pattern Matching Enhancements");
-            display.AddItemsToDisplay(3, "Using Declarations");
-            display.AddItemsToInvoke(1, DefaultInterfaceMembersDemo);
-            display.AddItemsToInvoke(2, PatternMatchingEnhancementsDemo);
-            display.AddItemsToInvoke(3, UsingDeclarationsDemo);
+            display.AddItemsForDisplay(1, "Nullable Reference Types", Demo.DefaultInterfaceMembersDemo);
+            display.AddItemsForDisplay(2, "Default Interface Members", Demo.DefaultInterfaceMembersDemo);
+            display.AddItemsForDisplay(3, "Pattern Matching Enhancements", Demo.PatternMatchingEnhancementsDemo);
+            display.AddItemsForDisplay(4, "Using Declarations", Demo.UsingDeclarationsDemo);
+            display.AddItemsForDisplay(5, "Using Declarations", Demo.UsingDeclarationsDemo);
+            display.AddItemsForDisplay(6, "Using Declarations", Demo.UsingDeclarationsDemo);
+            display.AddItemsForDisplay(7, "Using Declarations", Demo.UsingDeclarationsDemo);
+            display.AddItemsForDisplay(8, "Using Declarations", Demo.UsingDeclarationsDemo);
+            display.AddItemsForDisplay(9, "Using Declarations", Demo.UsingDeclarationsDemo);
+
             string input = string.Empty;
             Console.WriteLine("Select the feature to demo.");
             Console.WriteLine(display.GenerateIntroScreen());
             while (input != "q")
             {
-                input = Console.ReadLine();
+                input = Console.ReadLine() ?? string.Empty;
                 if (int.TryParse(input, out var demo))
                 {
+                    Console.WriteLine(display.DisplayDemoTitle(demo) ?? demo.ToString());
                     display.InvokeItem(demo);
                 }
+                else
+                {
+                    Console.WriteLine("Invalid input. Select from expected values.");
+                }
                 Console.WriteLine("Select Another example");
-                input = Console.ReadLine();
             }
         }
+        internal static class Demo
+        {
+            internal static void NullableReferenceTypesDemo()
+            {
 
-        static void DefaultInterfaceMembersDemo()
-        {
-            Console.WriteLine("1");
-        }
-        static void PatternMatchingEnhancementsDemo()
-        {
-            Console.WriteLine("2");
-        }
-        static void UsingDeclarationsDemo()
-        {
-            Console.WriteLine("3");
+            }
+            internal static void DefaultInterfaceMembersDemo()
+            {
+                // Use intergace as variable type otherwise it will not be accessible.
+                IGreeter greeter = new Greeter();
+                Console.WriteLine("Calling the class implementation.");
+                greeter.Greet();
+                Console.WriteLine("Calling the default interface implementation.");
+                greeter.SayBye();
+            }
+            internal static void PatternMatchingEnhancementsDemo()
+            {
+                var patternMatchingDemo = new PatternMatchingDemo();
+                var circle = new Circle() { Radius = 1 };
+                patternMatchingDemo.DisplayShape(circle);
+                var rectangle = new Rectangle() { Width = 10, Height = 10 };
+                patternMatchingDemo.DisplayShape(rectangle);
+
+            }
+            internal static void UsingDeclarationsDemo()
+            {
+                Console.WriteLine("Processing some file.");
+                var file = File.Create("some file.txt");
+                file.Close();
+                var demo = new UsingDeclarationDemo();
+                demo.ProcessFile(file.Name);
+            }
+
+            internal static void AsyncStreamDemo()
+            {
+
+            }
+
+            internal static void IndicesAndRangesDemo()
+            {
+
+            }
+            internal static void StaticLocalFunctionDemo()
+            {
+
+            }
+            internal static void InterpolationDemo()
+            {
+
+            }
+
         }
     }
 }
