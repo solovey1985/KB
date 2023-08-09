@@ -2,9 +2,7 @@
 
 # Preparation for Key Developer Position in .NET, C#, and Microservices
 
-## Table of Contents
 - [Preparation for Key Developer Position in .NET, C#, and Microservices](#preparation-for-key-developer-position-in-net-c-and-microservices)
-  - [Table of Contents](#table-of-contents)
   - [C# Deep Dive](#c-deep-dive)
   - [.NET Core and .NET 5/6+](#net-core-and-net-56)
   - [Microservices ](#microservices-)
