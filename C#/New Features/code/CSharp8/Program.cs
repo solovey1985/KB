@@ -77,7 +77,7 @@ namespace CSharp8
 
             internal static void AsyncStreamDemo()
             {
-
+                Console.WriteLine("");
             }
 
             internal static void IndicesAndRangesDemo()

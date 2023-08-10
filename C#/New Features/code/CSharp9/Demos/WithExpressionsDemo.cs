@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CSharp9.Demos
 {
-    internal class WithExpressionsDemo
+    public class WithExpressionsDemo
     {
+
     }
 }
