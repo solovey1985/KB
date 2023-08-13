@@ -45,6 +45,56 @@ Thread synchronization is a procedure that should be avoided whenever possible.
 - Threads that call the `WaitOne` method in `ManualResetEvent` will be blocked, waiting for a signal.
 
 ---
+#### Diference between ManualResetEvent and AutoResetEvent
+`ManualResetEvent` and `AutoResetEvent` are synchronization primitives provided by .NET for inter-thread communication and synchronization. They are part of the `System.Threading` namespace and are used to coordinate the execution of threads.
+
+The main difference between `ManualResetEvent` and `AutoResetEvent` lies in how they behave when signaled and reset:
+
+1. **ManualResetEvent:**
+   - When a `ManualResetEvent` is signaled (`Set()` is called), all waiting threads are released.
+   - The event remains in the signaled state until explicitly reset using the `Reset()` method.
+   - This means that multiple threads can enter the signaled state simultaneously until the event is manually reset.
+   - It is useful when you want to notify multiple threads and keep them running until the event is explicitly reset.
+
+```csharp
+ManualResetEvent manualEvent = new ManualResetEvent(false); // Initially not signaled
+
+// Thread 1
+manualEvent.WaitOne();  // Blocks until event is set
+
+// Thread 2
+manualEvent.WaitOne();  // Also blocks until event is set
+
+// Later in code
+manualEvent.Set();      // Releases both Thread 1 and Thread 2
+```
+
+2. **AutoResetEvent:**
+   - When an `AutoResetEvent` is signaled (`Set()` is called), only one waiting thread is released.
+   - The event automatically resets itself to a non-signaled state after a single thread has been released.
+   - If multiple threads are waiting, only one of them will proceed, and the event will reset immediately.
+   - It is useful when you want to notify one waiting thread and automatically reset the event.
+
+```csharp
+AutoResetEvent autoEvent = new AutoResetEvent(false); // Initially not signaled
+
+// Thread 1
+autoEvent.WaitOne();  // Blocks until event is set
+
+// Thread 2
+autoEvent.WaitOne();  // Blocks until event is set (Thread 1 releases the lock)
+
+// Later in code
+autoEvent.Set();      // Releases only one waiting thread (either Thread 1 or Thread 2)
+```
+
+In summary:
+- `ManualResetEvent` is manually reset and can release multiple threads until explicitly reset.
+- `AutoResetEvent` is automatically reset after releasing one waiting thread.
+
+ Choose the appropriate synchronization primitive based on your synchronization requirements. If you want to notify multiple threads and keep them running until manually reset, use `ManualResetEvent`. If you want to notify one thread and automatically reset the event, use `AutoResetEvent`.
+
+---
 
 ### Semaphore
 - Use the `Semaphore` class to manage access to a resource pool.
