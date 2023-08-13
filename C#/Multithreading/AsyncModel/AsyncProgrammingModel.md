@@ -23,7 +23,7 @@ The main idea of asynchronous programming is to initiate separate method calls a
 
 ---
 ## Async Patterns
-[AsyncPatternsImage](AsyncModelsInNET.png "Hover Text")
+![AsyncPatternsImage](AsyncModelsInNET.png "Hover Text")
 ---
 
 
