@@ -38,7 +38,7 @@ namespace MutexSample
         static void Function()
         {
             bool myMutex = Mutex1.WaitOne();
-
+            
             Console.WriteLine("Thread {0} entered the protected area.", Thread.CurrentThread.Name);
             Thread.Sleep(2000);
             Console.WriteLine("Thread {0} left the protected area.\n", Thread.CurrentThread.Name);

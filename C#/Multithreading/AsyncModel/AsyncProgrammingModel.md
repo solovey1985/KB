@@ -22,6 +22,10 @@ The main idea of asynchronous programming is to initiate separate method calls a
 8. Transmission and Reception of Special State Data
 
 ---
+## Async Patterns
+[AsyncPatternsImage](AsyncModelsInNET.png "Hover Text")
+---
+
 
 ### Summary
 - Classes that have built-in support for the asynchronous model possess a pair of asynchronous methods for each of their synchronous methods. These methods start with the words `Begin` and `End`. For instance, if one wishes to utilize the asynchronous variant of the `Read` method from the `System.IO.Stream` class, they need to employ the `BeginRead` and `EndRead` methods of that same class.

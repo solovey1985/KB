@@ -32,9 +32,9 @@ namespace ManualResetEventNs
 
 			Console.ReadKey();
 			manual.Set(); // Sends a signal to all threads.
-    
-			// Delay.
-			Console.ReadKey();
+            Console.WriteLine("Manual reset event was set.");
+            // Delay.
+            Console.ReadKey();
 		}
 
 		static void Function1()

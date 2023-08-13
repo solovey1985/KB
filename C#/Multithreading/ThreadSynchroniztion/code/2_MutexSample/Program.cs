@@ -22,7 +22,7 @@ namespace MutexSampleNs
         }
     }
 
-    // Рекурсивное запирание.
+    // Recursive locking.
     public class SomeClass : IDisposable
     {
         private Mutex mutex = new Mutex();

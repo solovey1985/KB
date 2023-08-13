@@ -47,7 +47,7 @@ namespace Event
             manual.WaitOne(); // Wait for the event notification.
             Console.WriteLine("\nMain thread received event notification from the first thread.\n");
 
-            manual.Reset(); // Resets the event to the nonsignaled state.
+            manual.Reset(); // Resets the event to the non-signaled state.
 
             thread = new Work("2", manual);
             Console.WriteLine("Main thread is waiting for the event.\n");
