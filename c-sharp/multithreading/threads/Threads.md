@@ -3,9 +3,10 @@
 
 In computing, a **thread** is the smallest unit of execution that can be scheduled by an operating system. A process can contain multiple threads, which can be executed concurrently, sharing the process resources but executing independently.
 
-In .NET, the `Thread` class, part of the `System.Threading` namespace, represents a thread. 
+In .NET, the `Thread` class, part of the `System.Threading` namespace, represents a thread.
 
 ## Table of Contents
+
 - [Threads in .NET](#threads-in-net)
   - [Table of Contents](#table-of-contents)
   - [What is a Thread?](#what-is-a-thread)
@@ -71,6 +72,7 @@ A thread can be in one of the following states:
 
 ---
 ![threading](Threading.png)
+
 ## Thread Priority
 
 Threads can have different priorities:
