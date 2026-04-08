@@ -1,0 +1,40 @@
+{
+  "contentRootPath": "./content",
+  "title": "developer",
+  "description": "developer knowledge base",
+  "baseUrl": "",
+  "server": {
+    "port": 5000,
+    "host": "localhost",
+    "watch": true
+  },
+  "build": {
+    "outputDir": "./docs",
+    "clean": true,
+    "generateSitemap": true,
+    "generateRobots": true
+  },
+  "navigation": {
+    "maxDepth": 5,
+    "excludePatterns": ["README.md", ".*"]
+  },
+  "search": {
+    "enabled": true,
+    "indexFileName": "search-index.json",
+    "indexFilePath": ".kb-search-index.json",
+    "titleBoost": 10,
+    "bodyBoost": 1
+  },
+  "auth": {
+    "enabled": false,
+    "username": "",
+    "password": "",
+    "cookieName": "kb_auth",
+    "cookieSecret": "",
+    "loginPath": "/login",
+    "logoutPath": "/logout"
+  },
+  "templates": {
+    "assetsBasePath": "/framework-assets"
+  }
+}

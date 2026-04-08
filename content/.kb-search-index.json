@@ -1,0 +1,902 @@
+{
+  "index": {
+    "version": "2.3.9",
+    "fields": [
+      "title",
+      "body"
+    ],
+    "fieldVectors": [
+      [
+        "title/guides/getting-started.md",
+        [
+          0,
+          1.234,
+          1,
+          1.234,
+          2,
+          1.685
+        ]
+      ],
+      [
+        "body/guides/getting-started.md",
+        [
+          0,
+          0.203,
+          1,
+          0.176,
+          2,
+          0.317,
+          3,
+          0.301,
+          4,
+          1.056,
+          5,
+          0.278,
+          6,
+          0.278,
+          7,
+          0.915,
+          8,
+          0.915,
+          9,
+          0.241,
+          10,
+          0.241,
+          11,
+          0.241,
+          12,
+          0.241,
+          13,
+          0.653,
+          14,
+          0.653,
+          15,
+          0.653,
+          16,
+          0.278,
+          17,
+          0.375,
+          18,
+          0.653,
+          19,
+          0.653,
+          20,
+          0.653,
+          21,
+          0.653,
+          22,
+          0.915,
+          23,
+          0.653,
+          24,
+          0.653,
+          25,
+          0.653,
+          26,
+          0.653,
+          27,
+          0.653,
+          28,
+          0.653,
+          29,
+          0.653,
+          30,
+          0.172,
+          31,
+          0.653,
+          32,
+          0.653,
+          33,
+          0.653,
+          34,
+          0.653,
+          35,
+          0.653,
+          36,
+          0.653,
+          37,
+          0.653,
+          38,
+          0.653,
+          39,
+          0.653,
+          40,
+          0.653,
+          41,
+          0.653
+        ]
+      ],
+      [
+        "title/index.md",
+        [
+          42,
+          1.986,
+          43,
+          1.986
+        ]
+      ],
+      [
+        "body/index.md",
+        [
+          0,
+          0.192,
+          1,
+          0.232,
+          3,
+          0.262,
+          5,
+          0.296,
+          6,
+          0.262,
+          9,
+          0.194,
+          10,
+          0.194,
+          11,
+          0.194,
+          12,
+          0.194,
+          16,
+          0.296,
+          17,
+          0.348,
+          30,
+          0.262,
+          42,
+          0.262,
+          43,
+          0.262,
+          44,
+          0.995,
+          45,
+          0.738,
+          46,
+          0.995,
+          47,
+          0.995,
+          48,
+          0.738,
+          49,
+          0.738,
+          50,
+          0.738,
+          51,
+          0.738,
+          52,
+          1.125,
+          53,
+          0.738,
+          54,
+          0.738,
+          55,
+          0.738,
+          56,
+          0.738,
+          57,
+          0.738,
+          58,
+          1.125,
+          59,
+          0.995,
+          60,
+          0.738,
+          61,
+          0.738,
+          62,
+          0.738,
+          63,
+          0.738,
+          64,
+          0.738,
+          65,
+          0.738
+        ]
+      ]
+    ],
+    "invertedIndex": [
+      [
+        "",
+        {
+          "_index": 17,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {},
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "a[start",
+        {
+          "_index": 36,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "add",
+        {
+          "_index": 57,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "api.md",
+        {
+          "_index": 23,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "automat",
+        {
+          "_index": 50,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "b",
+        {
+          "_index": 38,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "b[write",
+        {
+          "_index": 37,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "base",
+        {
+          "_index": 44,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "base!&#x27",
+        {
+          "_index": 31,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "block",
+        {
+          "_index": 8,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "build",
+        {
+          "_index": 61,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "c",
+        {
+          "_index": 40,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "c[preview",
+        {
+          "_index": 39,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "code",
+        {
+          "_index": 7,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "consol",
+        {
+          "_index": 27,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "content",
+        {
+          "_index": 16,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {},
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "creat",
+        {
+          "_index": 45,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "d[deploy",
+        {
+          "_index": 41,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "design",
+        {
+          "_index": 56,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "diagram",
+        {
+          "_index": 12,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {},
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "directori",
+        {
+          "_index": 3,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {},
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "document",
+        {
+          "_index": 65,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "e",
+        {
+          "_index": 32,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "featur",
+        {
+          "_index": 6,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {},
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "file",
+        {
+          "_index": 46,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "gener",
+        {
+          "_index": 52,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "get",
+        {
+          "_index": 0,
+          "title": {
+            "guides/getting-started.md": {}
+          },
+          "body": {
+            "guides/getting-started.md": {},
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "graph",
+        {
+          "_index": 34,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "guid",
+        {
+          "_index": 2,
+          "title": {
+            "guides/getting-started.md": {}
+          },
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "happi",
+        {
+          "_index": 64,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "help",
+        {
+          "_index": 14,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "highlight",
+        {
+          "_index": 49,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "home",
+        {
+          "_index": 19,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "index.md",
+        {
+          "_index": 18,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "knowledg",
+        {
+          "_index": 30,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {},
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "latex",
+        {
+          "_index": 10,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {},
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "log",
+        {
+          "_index": 28,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "markdown",
+        {
+          "_index": 5,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {},
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "math",
+        {
+          "_index": 9,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {},
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "mc^2",
+        {
+          "_index": 33,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "mermaid",
+        {
+          "_index": 11,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {},
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "navig",
+        {
+          "_index": 51,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "npm",
+        {
+          "_index": 59,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "page",
+        {
+          "_index": 20,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "plu",
+        {
+          "_index": 26,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "project_nam",
+        {
+          "_index": 43,
+          "title": {
+            "index.md": {}
+          },
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "refer",
+        {
+          "_index": 22,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "render",
+        {
+          "_index": 53,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "respons",
+        {
+          "_index": 55,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "run",
+        {
+          "_index": 58,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "sampl",
+        {
+          "_index": 13,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "serv",
+        {
+          "_index": 60,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "site",
+        {
+          "_index": 63,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "standard",
+        {
+          "_index": 25,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "start",
+        {
+          "_index": 1,
+          "title": {
+            "guides/getting-started.md": {}
+          },
+          "body": {
+            "guides/getting-started.md": {},
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "started.md",
+        {
+          "_index": 21,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "static",
+        {
+          "_index": 62,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "structur",
+        {
+          "_index": 4,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "support",
+        {
+          "_index": 47,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "syntax",
+        {
+          "_index": 48,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "tabl",
+        {
+          "_index": 54,
+          "title": {},
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "td",
+        {
+          "_index": 35,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "understand",
+        {
+          "_index": 15,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "us",
+        {
+          "_index": 24,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ],
+      [
+        "welcom",
+        {
+          "_index": 42,
+          "title": {
+            "index.md": {}
+          },
+          "body": {
+            "index.md": {}
+          }
+        }
+      ],
+      [
+        "x27;hello",
+        {
+          "_index": 29,
+          "title": {},
+          "body": {
+            "guides/getting-started.md": {}
+          }
+        }
+      ]
+    ],
+    "pipeline": [
+      "stemmer"
+    ]
+  },
+  "documents": [
+    {
+      "id": "guides/getting-started.md",
+      "title": "Getting Started Guide",
+      "url": "/content/guides/getting-started.md",
+      "snippet": "Getting Started Guide Directory Structure Markdown Features Code Blocks Math (LaTeX) Mermaid Diagrams Getting Started Guide This is a sample guide to help you understand how to structure your content. Directory Structure content / ├── index.md # Home page ├── guides / # Guides di"
+    },
+    {
+      "id": "index.md",
+      "title": "Welcome to {{PROJECT_NAME}}",
+      "url": "/content/index.md",
+      "snippet": "Welcome to {{PROJECT_NAME}} Features Getting Started Welcome to {{PROJECT_NAME}} This is your knowledge base. Start by creating markdown files in the content directory. Features 📝 Markdown support with syntax highlighting 🔗 Automatic navigation generation 📊 Mermaid diagram sup"
+    }
+  ],
+  "meta": {
+    "generated": "2026-04-08T22:20:58.176Z",
+    "documentCount": 2
+  }
+}
