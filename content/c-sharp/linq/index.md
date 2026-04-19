@@ -1,28 +1,36 @@
+# LINQ
+
 - [Simple Techniques](#simple-techniques)
   - [1. Basics of LINQ](#1-basics-of-linq)
-    - [a. Using LINQ to Objects:](#a-using-linq-to-objects)
-    - [b. Query Syntax vs Method Syntax:](#b-query-syntax-vs-method-syntax)
+    - [Using LINQ to Objects](#using-linq-to-objects)
+    - [Query Syntax vs Method Syntax](#query-syntax-vs-method-syntax)
   - [2. Common LINQ Operations](#2-common-linq-operations)
-    - [a. Filtering:](#a-filtering)
-    - [b. Selecting:](#b-selecting)
-    - [c. Ordering:](#c-ordering)
-    - [d. Aggregation:](#d-aggregation)
+    - [Filtering](#filtering)
+    - [Selecting](#selecting)
+    - [Ordering](#ordering)
+    - [Aggregation](#aggregation)
 - [Advanced Techniques](#advanced-techniques)
-  - [1. Grouping:](#1-grouping)
-  - [2. Joins:](#2-joins)
-  - [3. Set Operations:](#3-set-operations)
-  - [4. Quantifiers:](#4-quantifiers)
-  - [5. Pagination:](#5-pagination)
-  - [6. Lazy Evaluation:](#6-lazy-evaluation)
-  - [7. Using LINQ with Other Data Sources:](#7-using-linq-with-other-data-sources)
-  - [8. Custom Extension Methods:](#8-custom-extension-methods)
-  - [9. Expression Trees:](#9-expression-trees)
+  - [Grouping](#grouping)
+  - [Joins](#joins)
+  - [Set Operations](#set-operations)
+  - [Quantifiers](#quantifiers)
+  - [Pagination](#pagination)
+  - [Lazy Evaluation](#lazy-evaluation)
+  - [Using LINQ with Other Data Sources](#using-linq-with-other-data-sources)
+  - [Custom Extension Methods](#custom-extension-methods)
+  - [Expression Trees](#expression-trees)
+
+## Study Pages
+
+- [Interview Practice](linq-core.interview.md)
+- [Concept Map](linq-core.concept.md)
 
 ## Simple Techniques
 
 ### 1. Basics of LINQ
 
-#### a. Using LINQ to Objects:
+#### Using LINQ to Objects
+
 This is the practice of querying in-memory collections like arrays or lists.
 
 ```csharp
@@ -30,56 +38,70 @@ var numbers = new List<int> { 1, 2, 3, 4, 5 };
 var evenNumbers = numbers.Where(n => n % 2 == 0);
 ```
 
-#### b. Query Syntax vs Method Syntax:
-- **Query Syntax**:
-  ```csharp
-  var evens = from n in numbers
-              where n % 2 == 0
-              select n;
-  ```
-- **Method Syntax**:
-  ```csharp
-  var evens = numbers.Where(n => n % 2 == 0);
-  ```
+#### Query Syntax vs Method Syntax
 
-### 2. Common LINQ Operations
+- Query Syntax:
 
-#### a. Filtering:
-Using `Where` to filter collections based on a predicate.
+```csharp
+var evens = from n in numbers
+            where n % 2 == 0
+            select n;
+```
+
+- Method Syntax:
+
 ```csharp
 var evens = numbers.Where(n => n % 2 == 0);
 ```
 
-#### b. Selecting:
+### 2. Common LINQ Operations
+
+#### Filtering
+
+Using `Where` to filter collections based on a predicate.
+
+```csharp
+var evens = numbers.Where(n => n % 2 == 0);
+```
+
+#### Selecting
+
 Using `Select` to project or transform data.
+
 ```csharp
 var squares = numbers.Select(n => n * n);
 ```
 
-#### c. Ordering:
+#### Ordering
+
 `OrderBy`, `OrderByDescending`, `ThenBy`, and `ThenByDescending` can be used for sorting.
+
 ```csharp
 var sortedNumbers = numbers.OrderBy(n => n);
 ```
 
-#### d. Aggregation:
+#### Aggregation
+
 Functions like `Sum`, `Average`, `Min`, `Max` etc.
+
 ```csharp
 var total = numbers.Sum();
 ```
 
 ## Advanced Techniques
 
-### 1. Grouping:
+### Grouping
 
 `GroupBy` allows for grouping data based on key values.
+
 ```csharp
 var groupedNumbers = numbers.GroupBy(n => n % 2 == 0 ? "Even" : "Odd");
 ```
 
-### 2. Joins:
+### Joins
 
 LINQ allows for inner, group, left outer, and cross joins.
+
 ```csharp
 var products = new List<Product>();
 var categories = new List<Category>();
@@ -89,44 +111,48 @@ var productCategories = from p in products
                         select new { p.ProductName, c.CategoryName };
 ```
 
-### 3. Set Operations:
+### Set Operations
 
 Using methods like `Distinct`, `Union`, `Intersect`, and `Except`.
+
 ```csharp
 var numbers1 = new List<int> { 1, 2, 3 };
 var numbers2 = new List<int> { 3, 4, 5 };
 var union = numbers1.Union(numbers2); // {1, 2, 3, 4, 5}
 ```
 
-### 4. Quantifiers:
+### Quantifiers
 
 Methods like `Any`, `All`, and `Contains`.
+
 ```csharp
 bool hasEvenNumbers = numbers.Any(n => n % 2 == 0);
 ```
 
-### 5. Pagination:
+### Pagination
 
 Using `Skip` and `Take` for paging.
+
 ```csharp
 var page2 = numbers.Skip(10).Take(10);
 ```
 
-### 6. Lazy Evaluation:
+### Lazy Evaluation
 
 One of the strengths of LINQ is deferred execution. This means that a query is not executed until you enumerate over the query, e.g., in a `foreach` loop. This can be leveraged for performance benefits.
 
-### 7. Using LINQ with Other Data Sources:
+### Using LINQ with Other Data Sources
 
 LINQ is not limited to in-memory collections. There's also:
-- **LINQ to SQL**: For querying relational databases.
-- **LINQ to XML**: For querying XML data sources.
 
-### 8. Custom Extension Methods:
+- LINQ to SQL: For querying relational databases.
+- LINQ to XML: For querying XML data sources.
+
+### Custom Extension Methods
 
 You can extend LINQ by creating custom extension methods. For instance, you could create a method to filter only prime numbers.
 
-### 9. Expression Trees:
+### Expression Trees
 
 When working with sources like databases, LINQ queries are represented as expression trees, which can be translated to other languages, such as SQL for databases.
 

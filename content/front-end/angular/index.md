@@ -2,6 +2,11 @@
 
 Angular 17 marks one of the largest DX-focused releases since the Ivy compiler, introducing a revamped rendering pipeline, modern template primitives, and a streamlined project bootstrap experience. This section tracks the conceptual shifts you will encounter while migrating code that was written around the Angular 14-16 era.
 
+## Study Pages
+
+- [Interview Practice](angular-17-modernization.interview.md)
+- [Concept Map](angular-17-modernization.concept.md)
+
 ## What's New at a Glance
 
 - **Opt-in is over:** Standalone components are the default pattern; NgModules stay only for backwards compatibility.
