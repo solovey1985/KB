@@ -22,6 +22,10 @@ kb update
 
 Edit `kb.config.json` to customize your knowledge base settings.
 
+Edit `kb.plugins.json` to enable/disable framework plugins (for example the built-in 3D viewer plugin).
+
+Interview practice pages can be created as `*.interview.md` files when the `interviewPrep` plugin is enabled in `kb.plugins.json`.
+
 To enable private access, set `auth.enabled` to `true` and provide:
 
 - `auth.username`

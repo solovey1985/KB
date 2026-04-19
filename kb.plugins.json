@@ -1,0 +1,26 @@
+{
+    "plugins": [
+        {
+            "name": "threeDViewer",
+            "enabled": false,
+            "options": {
+                "extensions": [".stl", ".obj"],
+                "sectionTitle": "3D Models"
+            }
+        },
+        {
+            "name": "interviewPrep",
+            "enabled": true,
+            "options": {
+                "sectionTitle": "Interview Prep"
+            }
+        },
+        {
+            "name": "techMemory",
+            "enabled": true,
+            "options": {
+                "sectionTitle": "Technical Memory"
+            }
+        }
+    ]
+}
