@@ -35,7 +35,7 @@ const kb = new KnowledgeBase({
 
 kb.setupMiddleware(app);
 
-const PORT = config.server?.port || 3000;
+const PORT = config.server?.port || 5000;
 app.listen(PORT, () => {
   console.log(`📚 Knowledge Base running at http://localhost:${PORT}`);
 });
