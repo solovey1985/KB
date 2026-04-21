@@ -12,12 +12,11 @@ Implemented topic folders:
 - `authentication-security`
 - `performance-caching`
 - `architecture-system-design`
-
-Planned next folders:
-
 - `testing`
 - `production-readiness`
 - `modern-dotnet-csharp-features`
+
+There are no remaining planned folders from the current Web API interview source set.
 
 ## Folder Structure
 

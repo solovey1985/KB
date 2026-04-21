@@ -14,6 +14,9 @@ This index organizes the `content/backend/dotnet` study pages into topic cluster
 - [Authentication and Security](authentication-security/index.md)
 - [Performance and Caching](performance-caching/index.md)
 - [Architecture and System Design](architecture-system-design/index.md)
+- [Testing](testing/index.md)
+- [Production Readiness](production-readiness/index.md)
+- [Modern .NET and C# Features](modern-dotnet-csharp-features/index.md)
 
 ## Existing .NET Foundations
 
@@ -30,9 +33,10 @@ This index organizes the `content/backend/dotnet` study pages into topic cluster
 4. Layer on [Authentication and Security](authentication-security/index.md).
 5. Optimize with [Performance and Caching](performance-caching/index.md).
 6. Finish with [Architecture and System Design](architecture-system-design/index.md).
+7. Add [Testing](testing/index.md) to prove behavior and structure.
+8. Add [Production Readiness](production-readiness/index.md) to operationalize the API.
+9. Finish with [Modern .NET and C# Features](modern-dotnet-csharp-features/index.md) for current language and platform capabilities.
 
-## Remaining Planned Topics
+## Coverage Status
 
-- Testing
-- Production Readiness
-- Modern .NET and C# Features
+All currently planned interview-topic folders have now been created.
