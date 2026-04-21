@@ -13,6 +13,10 @@ This section turns the EF Core and data access material from the `.NET Web API I
 - [Querying and Mapping Concept Map](ef-core-querying-mapping.concept.md)
 - [Persistence and Scale Concept Map](ef-core-persistence-scale.concept.md)
 
+## Examples
+
+- [SQL Server EF Example Code](examples/sql-server-efexamples/efexamples.sln)
+
 ## Study Flow
 
 1. Start with [Junior Questions](junior.interview.md) to reinforce relationship mapping and query API choices.
@@ -24,6 +28,8 @@ This section turns the EF Core and data access material from the `.NET Web API I
 
 - [ASP.NET Core Internals and Middleware](../aspnet-core-internals-middleware/index.md)
 - [Performance and Caching](../performance-caching/index.md)
+- [General SQL](../../../databases/sql/general/index.md)
+- [SQL Server](../../../databases/sql/sql-server/index.md)
 - [.NET Backend Study Index](../index.md)
 
 ## Topic Coverage

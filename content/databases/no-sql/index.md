@@ -1,9 +1,19 @@
----
-title: No-SQL DataBases
-tags: [no-sql, database, basic]
----
-
 # NoSQL Databases
+
+Use this section for NoSQL principles, trade-offs, and common database families.
+
+## Related Sections
+
+- [Databases Study Index](../index.md)
+- [SQL Study Index](../sql/index.md)
+
+## Study Focus
+
+- schema-less and flexible data models
+- horizontal scaling
+- eventual consistency and BASE trade-offs
+- key-value, document, wide-column, and graph databases
+- SQL versus NoSQL use-case selection
 
 ## Principles
 NoSQL databases are designed to handle large volumes of unstructured or semi-structured data. They prioritize scalability, flexibility, and performance over strict adherence to relational database principles. Common principles include:
