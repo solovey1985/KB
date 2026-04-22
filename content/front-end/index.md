@@ -4,6 +4,7 @@ This section organizes frontend topics from styling and browser behavior into Ja
 
 ## Topics
 
+- [HTML](html/index.md)
 - [CSS](css/index.md)
 - [JavaScript](javascript/index.md)
 - [Angular](angular/index.md)
@@ -11,6 +12,7 @@ This section organizes frontend topics from styling and browser behavior into Ja
 
 ## Suggested Study Flow
 
-1. Start with [CSS](css/index.md) for presentation, layout, and responsive design.
-2. Continue with [JavaScript](javascript/index.md) for language, runtime, async, and TypeScript.
-3. Move to [Angular](angular/index.md) for framework structure and application patterns.
+1. Start with [HTML](html/index.md) for structure, semantics, forms, and accessibility.
+2. Continue with [CSS](css/index.md) for presentation, layout, and responsive design.
+3. Continue with [JavaScript](javascript/index.md) for language, runtime, async, and TypeScript.
+4. Move to [Angular](angular/index.md) for framework structure and application patterns.
