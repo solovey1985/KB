@@ -91,3 +91,91 @@ bootstrapApplication(AppComponent, {
 checks:
 - includes: provideRouter(routes)
 ```
+
+## Services, Forms, and Tooling
+
+```interview-question
+How do you create a service in Angular and why would you use one?
+---
+answer:
+A service is typically a class marked with `@Injectable` and provided through Angular's dependency injection system.
+
+You use a service to keep shared logic, data access, or cross-cutting behavior out of components so the app stays easier to test and maintain.
+hints:
+- Think `@Injectable` plus DI.
+- Shared logic is the key reason.
+- Components should not own every responsibility.
+```
+
+Related concepts: [Angular Service](angular-intermediate.concept.md#angular-service), [Dependency Injection](angular-intermediate.concept.md#dependency-injection)
+
+```interview-question
+What is a module in Angular, and what is its purpose today?
+---
+answer:
+An NgModule is the older Angular mechanism for grouping declarations, imports, and providers.
+
+It is still relevant in existing applications and some libraries, but modern Angular often prefers standalone components and provider-based bootstrapping instead of putting everything behind root and feature modules.
+hints:
+- Answer both the historical role and the modern shift.
+- Grouping declarations was the old model.
+- Standalone components change the default approach.
+```
+
+```interview-question
+How do you handle form submissions in Angular?
+---
+answer:
+Angular usually handles form submission through template-driven or reactive forms, then triggers submission logic from the form submit event such as `(ngSubmit)`.
+
+The component reads validated form values and passes them to a service or HTTP layer instead of mixing server logic directly into the template.
+hints:
+- Mention template-driven or reactive forms.
+- Submission is event-driven.
+- Validation and server calls are usually separate concerns.
+```
+
+```interview-question
+What is Angular CLI and what can it be used for?
+---
+answer:
+Angular CLI is the official command-line tool for creating, running, generating, testing, and building Angular projects.
+
+It standardizes project structure and automates common tasks such as scaffolding components, services, and configuration updates.
+hints:
+- Think project automation.
+- Generation and build tasks are common examples.
+- It helps keep project setup consistent.
+```
+
+```interview-question
+How do you make HTTP requests in Angular using `HttpClient`?
+---
+answer:
+You provide Angular's HTTP support, inject `HttpClient` into a service or component, and call methods such as `get`, `post`, `put`, or `delete`.
+
+Those methods return observables, so Angular code usually subscribes in the right layer or composes them with RxJS operators before updating UI state.
+hints:
+- Start by injecting `HttpClient`.
+- The API returns observables.
+- Services are the usual home for API calls.
+```
+
+```interview-code
+language: ts
+prompt: Complete the standalone bootstrap so `HttpClient` can be injected anywhere in the app.
+starter:
+bootstrapApplication(AppComponent, {
+  providers: [
+    
+  ],
+});
+solution:
+bootstrapApplication(AppComponent, {
+  providers: [
+    provideHttpClient(),
+  ],
+});
+checks:
+- includes: provideHttpClient()
+```

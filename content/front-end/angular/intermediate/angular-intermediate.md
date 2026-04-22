@@ -29,6 +29,8 @@ DI improves:
 - testability
 - separation of concerns
 
+Services are the most common DI example. They usually hold shared business logic, API calls, or app-wide behavior that should not be duplicated across components.
+
 ## Routing
 
 Routing lets Angular change visible content inside a SPA without a full page reload.
@@ -67,6 +69,21 @@ bootstrapApplication(AppComponent, {
 Angular provides standardized systems for forms and HTTP communication.
 
 At this level, the important idea is choosing the right abstraction and keeping state flow clear between UI, validation, and server communication.
+
+Form submission is usually handled through `(ngSubmit)` or reactive form handlers, with validation happening before data is passed into a service layer.
+
+`HttpClient` is Angular's standard API for HTTP calls. In modern standalone applications, it is commonly enabled through `provideHttpClient()` and then injected where needed.
+
+## CLI and project workflow
+
+Angular CLI is the standard tool for:
+
+- generating components, services, and other scaffolding
+- running the development server
+- building production bundles
+- running tests
+
+It matters in interviews because it represents the normal Angular workflow, not just a convenience command.
 
 ## Interview reminders
 
