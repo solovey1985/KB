@@ -1,37 +1,31 @@
-# Angular 17 Upgrade Notes
+# Angular Study Index
 
-Angular 17 marks one of the largest DX-focused releases since the Ivy compiler, introducing a revamped rendering pipeline, modern template primitives, and a streamlined project bootstrap experience. This section tracks the conceptual shifts you will encounter while migrating code that was written around the Angular 14-16 era.
+This section organizes Angular from core framework building blocks into application architecture, modern reactivity, server rendering, and real development cases.
 
-## Study Pages
+## Levels
 
-- [Interview Practice](angular-17-modernization.interview.md)
-- [Concept Map](angular-17-modernization.concept.md)
+1. [Basic](basic/index.md)
+2. [Intermediate](intermediate/index.md)
+3. [Advanced](advanced/index.md)
+4. [Cases](cases/index.md)
 
-## What's New at a Glance
+## Suggested Study Flow
 
-- **Opt-in is over:** Standalone components are the default pattern; NgModules stay only for backwards compatibility.
-- **Template control flow:** The new `@if`, `@for`, and `@switch` blocks replace structural directives like `*ngIf` for clearer ergonomics and improved type-checking.
-- **Signals-based reactivity:** Signals, introduced in v16, are now first-class and power built-in forms of change detection.
-- **Hydration & SSR by default:** The new application builder optimises for server-side rendering with out-of-the-box hydration support.
-- **Command palette enhancements:** The `ng` CLI now scaffolds and updates standalone-first projects and offers improved test tooling.
+1. Start with [Basic](basic/index.md) to understand components, templates, binding, directives, and Angular's core mental model.
+2. Continue with [Intermediate](intermediate/index.md) for dependency injection, routing, forms, HTTP, and standalone composition.
+3. Finish conceptual study with [Advanced](advanced/index.md) for signals, control flow, SSR, hydration, and performance-aware Angular architecture.
+4. Use [Cases](cases/index.md) to connect the concepts to real development situations and migration-style decisions.
 
-## Suggested Practice Project
+## Official Docs Alignment
 
-Experiment with the new APIs by evolving a small app from the "Widgets HQ Dashboard" template:
+This structure follows the official Angular documentation flow more closely than the previous Angular 17-only notes:
 
-1. **Legacy state:** A dashboard built with NgModules, `*ngIf`, and `*ngFor`, fetching data via RxJS observables.
-2. **Migration goals:**
-   - Replace the `AppModule` bootstrap with `bootstrapApplication` and standalone components.
-   - Rewrite key views using `@if`, `@for`, and deferred views (`@defer`).
-   - Introduce signals to manage widget settings locally, keeping RxJS only for async boundaries.
-   - Turn on hydration and SSR to improve first paint for the analytics route.
-3. **Stretch ideas:** experiment with the new test runner, or refactor a feature module into a lazy, standalone route.
+- components and templates first
+- dependency injection, routing, forms, and HTTP next
+- signals, SSR, hydration, and advanced runtime topics after that
 
-## Deep-Dive Articles
+## Related Topics
 
-- [Standalone bootstrap and routing](/content/front-end/angular/standalone-bootstrap.md)
-- [Modern template control flow](/content/front-end/angular/control-flow.md)
-- [Signals and component reactivity](/content/front-end/angular/signals-reactivity.md)
-- [Builders, hydration, and ecosystem updates](/content/front-end/angular/tooling-and-ecosystem.md)
-
-Use these notes while iteratively upgrading code or onboarding teammates to the Angular 17 mindset.
+- [Front-End Study Index](../index.md)
+- [JavaScript](../javascript/index.md)
+- [CSS](../css/index.md)
