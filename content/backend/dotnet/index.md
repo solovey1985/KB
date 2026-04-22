@@ -14,6 +14,7 @@ This index organizes the `content/backend/dotnet` study pages into topic cluster
 - [Authentication and Security](authentication-security/index.md)
 - [Performance and Caching](performance-caching/index.md)
 - [Architecture and System Design](architecture-system-design/index.md)
+- [Microservices Foundations](microservices/index.md)
 - [Testing](testing/index.md)
 - [Production Readiness](production-readiness/index.md)
 - [Modern .NET and C# Features](modern-dotnet-csharp-features/index.md)
@@ -32,10 +33,11 @@ This index organizes the `content/backend/dotnet` study pages into topic cluster
 3. Add persistence with [EF Core and Data Access](ef-core-data-access/index.md).
 4. Layer on [Authentication and Security](authentication-security/index.md).
 5. Optimize with [Performance and Caching](performance-caching/index.md).
-6. Finish with [Architecture and System Design](architecture-system-design/index.md).
-7. Add [Testing](testing/index.md) to prove behavior and structure.
-8. Add [Production Readiness](production-readiness/index.md) to operationalize the API.
-9. Finish with [Modern .NET and C# Features](modern-dotnet-csharp-features/index.md) for current language and platform capabilities.
+6. Continue with [Architecture and System Design](architecture-system-design/index.md).
+7. Add [Microservices Foundations](microservices/index.md) for deeper distributed-service trade-offs and patterns.
+8. Add [Testing](testing/index.md) to prove behavior and structure.
+9. Add [Production Readiness](production-readiness/index.md) to operationalize the API.
+10. Finish with [Modern .NET and C# Features](modern-dotnet-csharp-features/index.md) for current language and platform capabilities.
 
 ## Coverage Status
 

@@ -20,6 +20,7 @@ This section turns the architecture and system design material from the `.NET We
 
 ## Related Topics
 
+- [Microservices Foundations](../microservices/index.md)
 - [Performance and Caching](../performance-caching/index.md)
 - [Authentication and Security](../authentication-security/index.md)
 - [.NET Backend Study Index](../index.md)

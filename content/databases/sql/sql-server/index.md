@@ -15,6 +15,10 @@ Use this section for SQL Server-specific querying patterns, T-SQL building block
 - [Joins](t-sql/joins.md)
 - [T-SQL Features](t-sql/features.md)
 
+## Practice Environment
+
+- [AdventureWorksLT2019 Docker Setup](database-example/README.md)
+
 ## Study Flow
 
 1. Start with [General SQL](../general/index.md) for vendor-neutral foundations.

@@ -12,11 +12,12 @@ Implemented topic folders:
 - `authentication-security`
 - `performance-caching`
 - `architecture-system-design`
+- `microservices`
 - `testing`
 - `production-readiness`
 - `modern-dotnet-csharp-features`
 
-There are no remaining planned folders from the current Web API interview source set.
+There are no remaining planned folders from the current Web API interview source set, and additional deep dives can be added as separate topic folders when needed.
 
 ## Folder Structure
 
@@ -25,6 +26,7 @@ Each interview-driven topic should follow this structure:
 ```text
 topic-name/
   index.md
+  topic-name.md              # material notes when the topic includes study notes
   junior.interview.md        # only when the source topic has junior questions
   middle.interview.md        # or mid.interview.md if the team standard changes later
   senior.interview.md        # only when the source topic has senior questions
@@ -104,9 +106,10 @@ Use this order when building or studying new material:
 4. Authentication and Security
 5. Performance and Caching
 6. Architecture and System Design
-7. Testing
-8. Production Readiness
-9. Modern .NET and C# Features
+7. Microservices Foundations
+8. Testing
+9. Production Readiness
+10. Modern .NET and C# Features
 
 ## Source Conversion Strategy
 
