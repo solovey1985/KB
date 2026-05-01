@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "devinterview": {
+      "type": "local",
+      "command": ["python", "E:\\Learn\\questions-parser\\mcp_server.py"],
+      "enabled": true
+    }
+  },
+  "permission": {
+    "devinterview_*": "allow"
+  }
+}

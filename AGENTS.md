@@ -21,6 +21,100 @@ This document covers:
 5. Use consistent names for related concepts across the page.
 6. Do not invent relationships that are not supported by the source material.
 
+## Fetching Source Material via MCP
+
+Before authoring any interview or concept page, use the `devinterview` MCP tools
+to fetch the authoritative question list and free answers for the topic.
+
+In OpenCode, these tools are registered from `.opencode.json` and
+`.opencode/config.jsonc`. They may appear as namespaced tool calls:
+
+- `devinterview_get_questions`
+- `devinterview_get_answers`
+
+If your MCP host shows raw server tool names instead, use `get_questions` and
+`get_answers` with the same arguments.
+
+### Step 1 — Fetch the question list
+
+Call `get_questions` with the topic slug to retrieve all question titles,
+categories, difficulty ratings, and premium flags.
+
+```
+tool: get_questions
+arguments: { "topic": "<slug>" }
+```
+
+Use the response to:
+
+- understand the full scope and question count for the topic
+- group questions into logical sections for the interview page
+- identify which questions have free answers (`isPremium: false`)
+
+### Step 2 — Fetch free answers
+
+Call `get_answers` to retrieve answer text. Only the first ~15 questions per
+topic have accessible answers; premium questions are silently skipped.
+
+```
+tool: get_answers
+arguments: { "topic": "<slug>", "from_order": 1, "to_order": 15 }
+```
+
+Use range parameters to target specific questions:
+
+| Parameter | Purpose |
+|---|---|
+| `from_order` | First question number (1-based, inclusive) |
+| `to_order` | Last question number (inclusive) |
+| `max_answers` | Hard cap on returned answers after range filtering |
+
+### Handling premium questions
+
+Questions with `isPremium: true` return no answer text. For these:
+
+- author the answer block from your own knowledge
+- do not attribute the answer to devinterview.io
+- keep the same quality standard as free-answer blocks
+
+### Answer format
+
+The `answer` field in `get_answers` responses uses standard markdown:
+`_underscores_` for emphasis, `**double asterisks**` for bold. Copy and
+adapt this text directly into `interview-question` answer fields.
+
+### Topic slugs
+
+Use the exact slug string when calling either tool:
+
+```
+ado-net          agile-and-scrum  android          angular
+angular-js       asp-net          asp-net-mvc      asp-net-web-api
+aws              azure            c-sharp          cosmos-db
+css              dependency-injection  devops      django
+entity-framework express          flutter          git
+golang           graphql          html5            ionic
+java             javascript       jquery           kotlin
+laravel          linq             mongodb          net-core
+next             node             objective-c      oop
+php              pwa              python           react
+react-native     reactive-programming  reactive-systems  redis
+redux            ruby             ruby-on-rails    rust
+spring           sql              swift            t-sql
+testing          typescript       ux-design        vue
+wcf              web-security     websocket        wpf
+xamarin
+```
+
+### Full content pipeline
+
+1. Call `get_questions` → scan the full list → plan page sections and block mix
+2. Call `get_answers` (range 1–15) → collect free answer text
+3. Use free answers as the basis for `interview-question` answer fields
+4. Author remaining blocks (premium questions, concept cards) from your own knowledge
+5. Use `category` and `difficulty` metadata from `get_questions` to group and order blocks
+6. Follow the file type, frontmatter, and block syntax rules below
+
 ## File Types
 
 ### Interview pages
