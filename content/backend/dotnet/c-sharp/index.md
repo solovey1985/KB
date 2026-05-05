@@ -7,6 +7,7 @@
 ## Core Concepts
 
 - [Asynchronous Programming](multithreading/index.md)
+- [C# Memory Management](../csharp-memory-management/index.md)
 
 ## Versions and Features
 

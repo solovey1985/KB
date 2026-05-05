@@ -18,6 +18,7 @@ This index organizes the `content/backend/dotnet` study pages into topic cluster
 - [Testing](testing/index.md)
 - [Production Readiness](production-readiness/index.md)
 - [Modern .NET and C# Features](modern-dotnet-csharp-features/index.md)
+- [C# Memory Management](csharp-memory-management/index.md)
 
 ## Existing .NET Foundations
 
@@ -37,7 +38,8 @@ This index organizes the `content/backend/dotnet` study pages into topic cluster
 7. Add [Microservices Foundations](microservices/index.md) for deeper distributed-service trade-offs and patterns.
 8. Add [Testing](testing/index.md) to prove behavior and structure.
 9. Add [Production Readiness](production-readiness/index.md) to operationalize the API.
-10. Finish with [Modern .NET and C# Features](modern-dotnet-csharp-features/index.md) for current language and platform capabilities.
+10. Study [C# Memory Management](csharp-memory-management/index.md) for GC, finalization, and disposal fundamentals.
+11. Finish with [Modern .NET and C# Features](modern-dotnet-csharp-features/index.md) for current language and platform capabilities.
 
 ## Coverage Status
 

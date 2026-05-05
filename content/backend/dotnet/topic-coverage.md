@@ -16,6 +16,7 @@ Implemented topic folders:
 - `testing`
 - `production-readiness`
 - `modern-dotnet-csharp-features`
+- `csharp-memory-management`
 
 There are no remaining planned folders from the current Web API interview source set, and additional deep dives can be added as separate topic folders when needed.
 
@@ -109,7 +110,8 @@ Use this order when building or studying new material:
 7. Microservices Foundations
 8. Testing
 9. Production Readiness
-10. Modern .NET and C# Features
+10. C# Memory Management
+11. Modern .NET and C# Features
 
 ## Source Conversion Strategy
 
