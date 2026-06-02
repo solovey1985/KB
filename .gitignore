@@ -48,3 +48,12 @@ Thumbs.db
 dist/
 build/
 docs/
+
+# .NET / C# build artifacts
+[Bb]in/
+[Oo]bj/
+TestResults/
+*.user
+*.rsuser
+*.suo
+*.sln.docstates
