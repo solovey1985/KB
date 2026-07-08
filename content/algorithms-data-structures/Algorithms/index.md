@@ -5,11 +5,12 @@ This section covers both algorithm topics and a reusable workflow for solving in
 ## Study Pages
 
 - [Algorithm Problem-Solving Guide](algorithm-problem-solving.md)
+- [Algorithm Patterns Catalogue](patterns/index.md) — one page per pattern (selection heuristics, mermaid diagram, C# code, practice tasks)
 - [Sorting Algorithms Interview Practice](sorting-algorithms.interview.md)
 - [Sorting Algorithms Concept Map](sorting-algorithms.concept.md)
 - [Sorting Algorithms Notes](Sorting/sort-algorithms.md)
 
-Use the problem-solving guide to choose patterns and structure your answer, then use the sorting pages for one concrete algorithm family.
+Use the problem-solving guide to choose patterns and structure your answer, open the patterns catalogue for a deep dive on any single pattern, then use the sorting pages for one concrete algorithm family.
 
 ## What To Learn Here
 

@@ -133,6 +133,8 @@ After solving the base problem, show awareness of variations:
 
 ## How To Pick The Right Pattern
 
+Each pattern below has a dedicated deep-dive page in the [Algorithm Patterns Catalogue](patterns/index.md) with selection heuristics, a mermaid diagram, commented C# code, and practice tasks.
+
 ### Hash Map / Hash Set
 
 Use when the problem asks about:
