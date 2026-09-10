@@ -19,7 +19,7 @@ if (-not $ComposeFilePath) {
 }
 
 if (-not $EnvFilePath) {
-    $EnvFilePath = Join-Path $scriptRoot "..\.env"
+    $EnvFilePath = Join-Path $scriptRoot ".env"
 }
 
 function Get-DotEnvValue {

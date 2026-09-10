@@ -11,6 +11,7 @@ This section covers SQL Server's T-SQL language features and practice topics.
 - [Advanced Query Patterns](advanced-query-patterns.md)
 - [Advanced Query Patterns Concept Map](advanced-query-patterns.concept.md)
 - [Advanced Query Patterns Interview Practice](advanced-query-patterns.interview.md)
+- [Ten High-Leverage SQL Server Features](high-leverage-sql-server-features.md)
 - [Query Task Examples](queries-taks-examples.md)
 
 ## Language Features

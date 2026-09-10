@@ -21,6 +21,7 @@ Use this section for SQL Server-specific querying patterns, T-SQL building block
 - [Advanced Query Patterns](t-sql/advanced-query-patterns.md)
 - [Advanced Query Patterns Interview Practice](t-sql/advanced-query-patterns.interview.md)
 - [Advanced Query Patterns Concept Map](t-sql/advanced-query-patterns.concept.md)
+- [Ten High-Leverage SQL Server Features](t-sql/high-leverage-sql-server-features.md)
 - [Common Table Expressions](t-sql/common-table-expressions.md)
 - [Data Modification And Transactions](t-sql/data-modification-and-transactions.md)
 - [Data Modification And Transactions Interview Practice](t-sql/data-modification-and-transactions.interview.md)
