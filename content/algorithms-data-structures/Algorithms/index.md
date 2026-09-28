@@ -5,6 +5,7 @@ This section covers both algorithm topics and a reusable workflow for solving in
 ## Study Pages
 
 - [Algorithm Problem-Solving Guide](algorithm-problem-solving.md)
+- [Algorithm Problem-Solving Mind Map](algorithm-problem-solving-mind-map.md) — solving workflow, pattern selection, correctness checks, and practice progression
 - [Algorithm Patterns Catalogue](patterns/index.md) — one page per pattern (selection heuristics, mermaid diagram, C# code, practice tasks)
 - [Sorting Algorithms Interview Practice](sorting-algorithms.interview.md)
 - [Sorting Algorithms Concept Map](sorting-algorithms.concept.md)
